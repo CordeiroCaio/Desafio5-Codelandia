@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button,
+input {
+    border: 0;
+}
+button:focus,
+input:focus {
+    border: 0;
+}
+
+/* EDIÇÃO BODY */
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
+    background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container{
+    width: 1440px;
+    height: 720px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    width: 50%;
+}
+
+header .logo img{
+    width: 130px;
+    cursor: pointer;
+}
+
+header .midia{
+    display: flex;
+    justify-content: space-around;
+    width: 18%;
+}
+
+header .midia img{
+    width: 45px;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+header .midia img:hover{
+    border-bottom: 2px solid #628E75;
+    transform: scale(1.2);
+}
+
+/* CONTEUDO */
+
+.conteudo{
+    width: 100%;
+    display: flex;
+}
+
+.conteudo .escrita{
+    width: 50%;
+    color: #F9F9F9;
+}
+
+.conteudo .escrita .texto{
+    width: 445px;
+}
+.conteudo .escrita h2{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 30px;
+}
+
+.conteudo .escrita h1{
+    width: 445px;
+    margin-top: 14px;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 109%;
+}
+
+.conteudo .escrita p{
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.conteudo .animacao{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform:translateY(0);
+    animation: all 200ms ease;
+}
+
+@keyframes voar {
+    from {
+      transform: translate(800px, 0);
+    }
+  
+    to {
+      transform: translate(0, 0);
+    }
+  }
+
+
+.conteudo .animacao #fant1{
+    width: 500px;
+    position: relative;
+    right: -150px;
+    animation-duration: 7s;
+    animation-name: voar;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+.conteudo .animacao #fant1:hover{
+    transform: scale(1.02);
+}
+
+@keyframes voar1 {
+    from {
+      transform: translate(0, 500px);
+    }
+  
+    to {
+      transform: translate(0, 0);
+    }
+  }
+
+
+.conteudo .animacao #fant2{
+    width: 500px;
+    position: relative;
+    right: -200px;
+    animation-duration: 7s;
+    animation-name: voar1;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.conteudo .animacao #fant2:hover{
+    transform: scale(1.02);
+}
+
+#assistir_agora{
+    width: 225px;
+    height: 45px;
+    background: #658E76;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #F9F9F9;
+    cursor: pointer;
+}
+#assistir_agora:hover{
+    box-shadow: 26px 24px 20px rgba(31, 26, 51, 0.3);
+    transform: scale(1.04);
+}
+
+.conteudo .escrita .texto button{
+    margin-top: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#trailer{
+    width: 225px;
+    height: 45px;
+    border: 2px solid #658E76;
+    background: transparent;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #F9F9F9;
+    cursor: pointer;
+}
+
+#trailer:hover{
+    box-shadow: 26px 24px 20px rgba(31, 26, 51, 0.3);
+    transform: scale(1.04);
+}
+
+.botoes{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+    -webkit-transform: skew(-20deg);
+       -moz-transform: skew(-20deg);
+         -o-transform: skew(-20deg);
+            transform: skew(-20deg);
+}
+
+
